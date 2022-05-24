@@ -15,7 +15,7 @@ public class HealthController : MonoBehaviour
         
         _currentHealth = MaxHealth;
         Debug.Log(_currentHealth);
-
+        
     }
 
     public void GetDamage(float damage)
@@ -24,7 +24,7 @@ public class HealthController : MonoBehaviour
         Debug.Log(_currentHealth);
         if (CurrentHealth < 0)
         {
-            Debug.Log("Game Over");
+            
         }
   
     
