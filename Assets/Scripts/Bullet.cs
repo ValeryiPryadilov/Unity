@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            other.GetComponent<HealthController>().GetDamage(Damage);
+            other.GetComponent<HealthController>().CurrentHealth -= Damage;
 
             Destroy(gameObject);
         }

@@ -60,11 +60,14 @@
     <Compile Include="Assets\Scripts\ENEMY.cs" />
     <Compile Include="Assets\Scripts\Controller.cs" />
     <Compile Include="Assets\Scripts\CameraBehavior.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\HealthController.cs" />
+    <Compile Include="Assets\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\Invector-3rdPersonController_LITE\3D Models\Others\HealthItem\vAnimateUV.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
     <Compile Include="Assets\Invector-3rdPersonController_LITE\Scripts\Generic\Utils\vComment.cs" />
     <Compile Include="Assets\Scripts\Patrol.cs" />
+    <Compile Include="Assets\Scripts\FireControler.cs" />
     <Compile Include="Assets\Invector-3rdPersonController_LITE\Scripts\CharacterController\vThirdPersonController.cs" />
     <Compile Include="Assets\Invector-3rdPersonController_LITE\Scripts\Generic\Utils\vExtensions.cs" />
     <Compile Include="Assets\Invector-3rdPersonController_LITE\Scripts\CharacterController\vThirdPersonAnimator.cs" />
@@ -75,9 +78,10 @@
     <Compile Include="Assets\Scripts\DoorOpen.cs" />
     <Compile Include="Assets\Scripts\Turel.cs" />
     <Compile Include="Assets\Invector-3rdPersonController_LITE\Scripts\Generic\Utils\vPickupItem.cs" />
-    <Compile Include="Assets\Scripts\TNT.cs" />
     <Compile Include="Assets\Scripts\LVLMAnager.cs" />
-    <Compile Include="Assets\Scripts\FireControler.cs" />
+    <Compile Include="Assets\Scripts\TNT.cs" />
+    <Compile Include="Assets\EndLvlControlller.cs" />
+    <Compile Include="Assets\Scripts\HeathBarView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Invector-3rdPersonController_LITE\README_Basic.txt" />

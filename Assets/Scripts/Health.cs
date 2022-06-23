@@ -10,7 +10,7 @@ public class Health : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        other.GetComponent<HealthController>().Healing(Healing);
+        other.GetComponent<HealthController>().CurrentHealth += Healing;
         Destroy(gameObject);
     }
 

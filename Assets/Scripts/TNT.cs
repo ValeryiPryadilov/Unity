@@ -11,7 +11,7 @@ public class TNT : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         other.GetComponent<Rigidbody>().AddExplosionForce(Forse, transform.position, Radius);
-        other.GetComponent<HealthController>().GetDamage(Damage);
+        other.GetComponent<HealthController>().CurrentHealth -= Damage;
         Destroy(gameObject);
 
     }

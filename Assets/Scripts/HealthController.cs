@@ -1,14 +1,27 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class HealthController : MonoBehaviour
 {
-    [SerializeField] float MaxHealth = 100;
+    public float MaxHealth = 100;
 
     private float _currentHealth;
 
-    public float CurrentHealth { get => _currentHealth; }
+    
+    public float CurrentHealth 
+    
+    { 
+        get => _currentHealth;
+        set 
+        {
+          _currentHealth = value;
+            HealthChange.Invoke(_currentHealth);
+        }
+    
+    }
+    public Action<float> HealthChange;
 
     void Start()
     {

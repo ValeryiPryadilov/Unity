@@ -59,7 +59,7 @@ public class Controller : MonoBehaviour
     {
         var xMov = Input.GetAxis("Horizontal") * MovementSpeed * Time.deltaTime;
         var zMov = Input.GetAxis("Vertical") * MovementSpeed * Time.deltaTime;
-
+        Debug.Log($"{xMov}, {zMov}");
         rb.velocity = transform.TransformDirection(xMov, rb.velocity.y, zMov);
         //rb.MovePosition(transform.position + new Vector3(xMov, 0, zMov));
     }

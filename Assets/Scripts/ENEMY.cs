@@ -73,7 +73,7 @@ public class ENEMY : MonoBehaviour
     private void Atack(GameObject Player) 
     
     {
-        Player.GetComponent<HealthController>().GetDamage(MaxDamage);
+        Player.GetComponent<HealthController>().CurrentHealth -= MaxDamage;
 
     }
 }
